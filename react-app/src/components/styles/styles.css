@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(180, 180, 180);
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: fantasy;
+}
+
+.register-button {
+    padding: 2px 5px;
+    margin: 2px;
+}
+
+/*BookList*/
+.app-container {
+    margin: 42px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: fantasy;
+}
+
+.register-li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.register-li li {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.register-book {
+    margin-top: 20px;
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: 3px 3px rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
+.register-image{
+    width: 150px;
+    height: auto;
+}
+
+/*AddBook, UpdateBook, DeleteBook e ViewBook*/
+.register-container {
+    padding: 10px 20px;
+    width: max-content;
+    height: max-content;
+
+    margin-top: 30px;
+    border: 3px solid black;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 7px 0;
+    padding-left: 5px;
+    width: 200px;
+    background-color: rgb(230, 227, 227);
+    color: black;
+}
+
+#register-image-p{
+    margin-left: 28px;
+}
