@@ -79,3 +79,9 @@ h1 {
 #register-image-p{
     margin-left: 28px;
 }
+
+.register-image{
+    width: 150px; 
+    height: 200px; 
+    object-fit: cover; 
+}
