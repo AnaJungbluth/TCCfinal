@@ -85,8 +85,10 @@ const BookList = () => {
   };
 
   const handleViewDetails = (book) => {
+    console.time("getBooksID")
     setSelectedBook(book);
     setShowDetails(true);
+    console.timeEnd("getBooksID")
   };
 
   const handleCloseDetails = () => {
