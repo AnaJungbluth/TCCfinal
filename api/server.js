@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
-const mongoose = require('mongoose'); // Importando o mongoose
+const mongoose = require('mongoose'); 
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -75,7 +75,7 @@ app.post('/books', upload.single('image'), (req, res) => {
 
   newBook.save()
     .then((savedBook) => {
-      console.log('Livro salvo no MongoDB:', savedBook);
+      //console.log('Livro salvo no MongoDB:', savedBook);
       res.status(201).json(savedBook);
       console.timeEnd("postBook");
     })
@@ -103,7 +103,6 @@ app.put('/books/:id', upload.single('image'), (req, res) => {
       if (!updatedBook) {
         return res.status(404).send('Livro não encontrado');
       }
-      console.log('Livro atualizado com sucesso:', updatedBook);
       res.send('Livro atualizado com sucesso');
       console.timeEnd("putBook");
     })
@@ -123,7 +122,6 @@ app.delete('/books/:id', (req, res) => {
       if (!deletedBook) {
         return res.status(404).send('Livro não encontrado');
       }
-      console.log('Livro removido com sucesso:', deletedBook);
       res.send('Livro removido com sucesso');
       console.timeEnd("deleteBook");
     })
